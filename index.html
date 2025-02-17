@@ -109,6 +109,10 @@
         <button onclick="saveToLocalStorage()">Guardar local storage</button>
         <button onclick="loadFromLocalStorage()">Cargar Local storage</button>
 
+        <h2>Sesion storage</h2>
+        <button onclick="saveToSessionStorage()">Guardar session storage</button>
+        <button onclick="loadFromSessionStorage()">Cargar session storage</button>
+
         <p id="storageOutput"><em>Respuesta storage</em></p>
         <script>
             function saveToLocalStorage(){
@@ -118,6 +122,16 @@
 
             function loadFromLocalStorage(){
                 let data = localStorage.getItem("examplekey");
+                document.getElementById("storageOutput").innerHTML = data;
+            }
+
+            function saveToSessionStorage(){
+                sessionStorage.setItem("sessionStorage", "tarea");
+                alert("Datos de sesion guardados");
+            }
+
+            function loadFromSessionStorage(){
+                let data = sessionStorage.getItem("sessionStorage");
                 document.getElementById("storageOutput").innerHTML = data;
             }
         </script>
