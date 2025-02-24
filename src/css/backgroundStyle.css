@@ -6,3 +6,73 @@ div{
     font-size: medium;
 
 }
+
+body{
+    text-align: center;
+    background-color: blanchedalmond;
+
+}
+
+.background-col{
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.background-img{
+    width: 100%;
+    background-image: url("/src/img/background.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.background-rep{
+    width: 100%;
+    background-image: url("../img/background2.jpg");
+    background-repeat: repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.background-att{
+    width: 100%;
+    background-color: aquamarine;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.background-pos{
+    width: 100%;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+
+#left, #right{
+    width: 200px;
+    min-height: 150px;
+    margin: 20px;
+    border: 2px dashed #000;
+}

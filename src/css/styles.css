@@ -38,10 +38,27 @@
     }
 
 
-#div1, #drag1 {
+/*#div1, #drag1 {
     width: 200px;
     height: 100px;
     padding: 10px;
     border: 1px solid #aaaaaa;
     background-color: red;
   }
+*/
+.background-col{
+    width: 20%;
+    min-height: 100vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left, #right{
+    width: 300px;
+    min-height: 200px;
+    margin: 20px;
+    border: 2px lightseagreen;
+    display: contents;
+}

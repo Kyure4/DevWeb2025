@@ -6,39 +6,56 @@
     <title>Background</title>
 
     <link rel="stylesheet" href="../css/backgroundStyle.css">
+    <script src="../js/dragAndDrop.js"></script>
 </head>
 <body>
     <h1>Ejemplos de fondo</h1>
     
     <!-- Background Color -->
     <div class="background-col">
-        <p>
-            Este es el ejemplo de fondo con color
-        </p>
-    </div>
+        <p class="center-text">Ejemplos de fondo con color</p>
+        <div class="container">
+            <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="../img/color.png" draggable="true" ondragstart="drag(event)" id="drag1" width="200" height="150"></div>
+            <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+     </div>
+
     <!-- Background Image -->
     <div class="background-img">
-        <p>
-            Este es el ejemplo de fondo con imagen
-        </p>
+        <p class="center-text">Este es el ejemplo de fondo con imagen </p>
+        <div class="container">
+            <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="../img/lp.png" draggable="true" ondragstart="drag(event)" id="drag2" width="200" height="150"></div>
+            <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
     </div>
     <!-- Background Repeat -->
     <div class="background-rep">
-        <p>
-            Este es el ejemplo de fondo con repeticion
-        </p>
+        <p class="center-text">Este es el ejemplo de fondo con repeticion </p>
+        <div class="container">
+            <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="../img/lp.png" draggable="true" ondragstart="drag(event)" id="drag3" width="200" height="150"></div>
+            <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
     </div>
     <!-- Background Attachment -->
     <div class="background-att">
-        <p>
-            Este es el ejemplo de fondo con fijado
-        </p>
+        <p class="center-text">Este es el ejemplo de fondo con añadidos </p>
+        <div class="container">
+            <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="../img/lp.png" draggable="true" ondragstart="drag(event)" id="drag4" width="200" height="150"></div>
+            <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
     </div>
     <!-- Background Position -->
-    <div class="background-">
-        <p>
-            Este es el ejemplo de fondo con posicion
-        </p>
+    <div class="background-pos">
+        <p class="center-text">Este es el ejemplo de fondo con posicion </p>
+        <div class="container">
+            <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="../img/lp.png" draggable="true" ondragstart="drag(event)" id="drag5" width="200" height="150"></div>
+            <div id="right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
     </div>
 </body>
 </html>
