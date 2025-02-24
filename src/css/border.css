@@ -1,0 +1,32 @@
+.border-example{
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: blueviolet;
+    background-color: beige;
+}
+
+.dotted{
+    border-style: dotted;
+    margin: 20px;
+}
+
+.dashed{
+    border-style: dashed;
+    margin: 20px;
+}
+
+.solid{
+    border-style: solid;
+    margin: 20px;
+}
+
+.double{
+    border-style: double;
+    margin: 20px;
+}
+
+.groove{
+    border-style: groove;
+    margin: 20px;
+}
