@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Spotify</title>
     <link rel="stylesheet" href="../css/music.css">
-    <title>Music</title>
 </head>
 <body>
-    <div id="container-login" class="container-login">
-        <h1>Inicia Sesion en Spotify</h1>
-
-        <button type="button" id="btn-style"><img class="iconStyle" src="../svg/google-icon.svg" alt="Google">Iniciar con Google</button>
-        <button type="button" id="btn-style"><img class="iconStyle" src="../svg/facebook-icon.svg" alt="Google">Iniciar con Facebook</button>
-        <button type="button" id="btn-style"><img class="iconStyle" src="../svg/apple-icon.svg" alt="Google">Iniciar con Apple</button>
-        <button type="button" >Iniciar con numero de telefono</button>
-        <hr>
-        <span>Correo electronico o nombre de usuario</span>
-        <input type="email" name="" id="" placeholder="Correo electronico o nombre de usuario">
-        <span>Contraseña</span>
-        <input type="password" name="" id="" placeholder="Contraseña">
-        <hr>
-        <button class="btn-login" id="btn-style">Iniciar sesion</button>
-        <hr>
-        <span><p><a href="">¿Olvidaste la contraseña?</a></p></span>
-        <p>¿No tienes cuenta? <a href="">Suscribete a Spotify</a></p>
+    <div class="container-login">
+        <img class="img-logo" src="../svg/spotify-icon.svg" alt="">
+        <h1>Inicia sesión en Spotify</h1>
+        
+        <div class="social-login">
+            <button type="button" class="btn-social"><img class="iconStyle" src="../svg/google-icon.svg" alt="Google"> Iniciar con Google</button>
+            <button type="button" class="btn-social"><img class="iconStyle" src="../svg/facebook-icon.svg" alt="Facebook"> Iniciar con Facebook</button>
+            <button type="button" class="btn-social"><img class="iconStyle" src="../svg/apple-icon.svg" alt="Apple"> Iniciar con Apple</button>
+            <button type="button" class="btn-phone">Iniciar con número de teléfono</button>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <form class="login-form">
+            <label for="email">Correo electrónico o nombre de usuario</label>
+            <input type="email" id="email" placeholder="Correo electrónico o nombre de usuario" required>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            
+            <button type="submit" class="btn-login">Iniciar sesión</button>
+        </form>
+        
+        
+        <div class="extra-links">
+            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <p>¿No tienes cuenta? <a href="#">Suscríbete a Spotify</a></p>
+        </div>
     </div>
+    <div class="footer">Copia no oficial de Spotify - Todos los derechos reservados.</div>
 </body>
 </html>
