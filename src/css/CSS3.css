@@ -1,0 +1,137 @@
+body{
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+/*Selector basico*/
+
+h1, h2 {
+    padding: 10px;
+}
+
+
+/*Selector avanzado*/
+
+.selector-avanzado p.example{
+    color: blue;
+}
+
+.selector-avanzado p[data-info]{
+    font-weight: bold;
+}
+
+/*Pseudoelementos y pseudoclases*/
+
+.pseudo::before{
+    content: "pseudoelemento ::before";
+    color: aqua;
+}
+
+.pseudo:nth-child(2){
+    color: blueviolet;
+}
+
+/*Transiciones y animaciones*/
+
+.transicion p{
+    transition: color 0.5s ease;
+}
+
+.transicion p:hover{
+    color: red;
+    cursor:crosshair;
+    text-decoration: underline;
+}
+
+.animacion{
+    width: 100px;
+    height: 100px;
+    max-width: fit-content;
+    margin-inline: auto;
+    background-color: cyan;
+    text-align: center;
+    animation: girar 2s infinite linear alternate-reverse;
+}
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+/*Trasformaciones*/
+
+.trasformaciones{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    /*transition: transform 0.5s ease;*/
+    animation: position 5s linear infinite;
+}
+
+.trasformaciones:hover{
+    transform: scale(0.5) ;
+}
+
+@keyframes position{
+   0% {transform: translateX(0)}
+   50% {transform: translateX(100vw)}
+   100% {transform: translateX(0)}
+}
+
+/*Flexbox*/
+
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    border: 1px dashed maroon;
+    padding: 10px;
+}
+
+.flexbox div{
+    background-color: wheat;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+/*Grid layout*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid div{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    body{
+        background-color: bisque;
+    }
+}
+
+footer{
+    background-color: #333;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.sombras p{
+    text-shadow: 2px 2px 3px #000000;
+    opacity: 0.9;
+
+}
